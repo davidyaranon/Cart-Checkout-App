@@ -43,7 +43,7 @@ int main(int argc, const char* argv[])
     crow::SimpleApp app;
 
     mongocxx::instance inst{};
-    const auto uri = mongocxx::uri{"mongodb+srv://dyaranon:Moonlight1201!@cluster0.jdlbz.mongodb.net/sample_restaurants?retryWrites=true&w=majority"};
+    const auto uri = mongocxx::uri{/*INSERT DATABASE HERE*/};
     mongocxx::client client{uri};
     mongocxx::database db = client["cart_app_data"];
     mongocxx::collection cart_info = db["cart_info"];
