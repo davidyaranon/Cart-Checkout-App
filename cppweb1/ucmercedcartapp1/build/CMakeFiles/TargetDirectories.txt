@@ -1,0 +1,3 @@
+/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/rebuild_cache.dir
+/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/ucmercedcartapp1.dir
+/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/edit_cache.dir

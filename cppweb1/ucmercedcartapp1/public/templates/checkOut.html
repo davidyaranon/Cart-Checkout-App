@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Check Out Page</title>
+        <link rel="stylesheet" type="text/css" href="../styles/index.css">
+        <link rel="stylesheet" type="text/css" href="../styles/skeleton.css">  
+        <link rel="stylesheet" type="text/css" href="../styles/crow.css">  
+        <link rel="stylesheet" type="text/css" href="../styles/w3.css">  
+        <script src="../scripts/jquery.min.js" type="text/JavaScript" ></script>
+        <script src="../scripts/checkOut.js" type="text/JavaScript"></script>
+    </head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <body>
+        <header class="desktop">
+        </header>
+        <br><br>
+    </body>
+
+    <body>
+        <form>
+            <div class="row">
+                <div class="one-third column" style="padding-right: 10px;padding-left: 10px;">
+                    <label for="name">Your Name</label>
+                    <input type="search" autocomplete="off" class="u-full-width" id="name">
+                </div>
+                <div class="one-third column"style="padding-right: 10px;padding-left: 10px;">
+                    <label for="name">Current Mileage</label>
+                    <input type="search" autocomplete="off" class="u-full-width" id="mileage">
+                </div>
+                <div class="one-third column" style="padding-right: 10px;padding-left: 10px;">
+                    <label for="name">Destination</label>
+                    <select class="u-full-width" id="destination" onChange="destinationSelection(this);">
+                        <option value="AOB">Academic Office Building (AOB)</option>
+                        <option value="ADMIN">Administration Bldg</option>
+                        <option value="Aquatic Center">Aquatic Center</option>
+                        <option value="ACS">Arts & Computational Sciences (ACS)</option>
+                        <option value="Bellevue Loading Dock">Bellevue Loading Dock</option>
+                        <option value="Biomedical Sciences &Physics">Biomedical Sciences &Physics</option>
+                        <option value="BobCat Field">BobCat Field</option>
+                        <option value="Central Plant">Central Plant</option>
+                        <option value="COB1">Classroom and Office Building (COB1)</option>
+                        <option value="COB2">Classroom and Office Building (COB2)</option>
+                        <option value="Conference Center">Conference Center</option>
+                        <option value="ECEC">Early Childhood Education Center (ECEC)</option>
+                        <option value="El Portal">El Portal</option>
+                        <option value="FSA/FSB">Facilities Services Buildings A and B (FSA and FSB)</option>
+                        <option value="Glacier Point">Glacier Point</option>
+                        <option value="Granite Pass">Granite Pass</option>
+                        <option value="Greenhouse">Greenhouse</option>
+                        <option value="Health & Athletic Center">Health & Athletic Center</option>
+                        <option value="R&W">Joseph Gallo Recreation and Wellness Center (R&W)</option>
+                        <option value="KL">Kolligian Library (KL)</option>
+                        <option value="PD">Police Department (PD)</option>
+                        <option value="SE1">Science and Engineering I (S&E1)</option>
+                        <option value="SE2">Science and Engineering II (S&E2)</option>
+                        <option value="Sentinel Rock">Sentinel Rock</option>
+                        <option value="SSM">Social Sciences and Management (SSM)</option>
+                        <option value="SAAC">Student Activities and Athletics Center (SAAC)</option>
+                        <option value="SSB">Student Services Building (SSB)</option>
+                        <option value="SRE">Sustainability Research & Engineering (SRE)</option>
+                        <option value="The Pavilion">The Pavilion</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 10px;padding-right: 10px;">
+                <label for="report">Maintenence Report</label>
+                <textarea class="u-full-width" placeholder="Looks Good! ..." id="report"></textarea>
+            </div class="row">
+            <br>
+            <div class="row" style="padding-left: 10px;">
+                <button type = "button" id="check-out" class="button button-primary" onclick="checkOut()">CHECK OUT</button>
+            </div>
+            <br><br><br>
+            <div class="row" style="padding-left: 10px;">
+                <label for="Or to Check In...">Or to Check In...</label>
+                <a href = "checkIn.html" class="button button-primary">Check In</a>
+            </div>
+        </form>
+    </bodY>
+
+    
+</html>
