@@ -5,6 +5,7 @@ Useful tool to checkout carts on campus, still configuring MongoDB CXX database 
 Steps to run on localhost:8080
 
 - Make sure Docker is installed!<br />
+- go into main.cpp and adjust the mongocxx uri (message me for database details)
 - cd ucmercedcartapp1/cppweb1/cppbox1<br />
 - docker build -t cppbox1 .<br />
 - cd .. (go back into cppweb1)<br />
