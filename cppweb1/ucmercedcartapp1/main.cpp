@@ -10,7 +10,6 @@
 #include <mongocxx/uri.hpp>
 #include <bsoncxx/types.hpp>
 
-#include "json.h"
 #include "LoadStaticContent.hpp"
 
 #include <iostream>
@@ -32,6 +31,8 @@ using bsoncxx::builder::stream::finalize;
 using bsoncxx::builder::stream::open_array;
 using bsoncxx::builder::stream::open_document;
 using bsoncxx::builder::basic::kvp;
+using bsoncxx::builder::basic::make_array;
+using bsoncxx::builder::basic::make_document;
 using mongocxx::cursor;
 
 
@@ -43,149 +44,193 @@ int main(int argc, const char* argv[])
     crow::SimpleApp app;
 
     mongocxx::instance inst{};
-    const auto uri = mongocxx::uri{/*INSERT DATABASE HERE*/};
+    const auto uri = mongocxx::uri{"mongodb+srv://dyaranon:Moonlight1201%21@neon.w6akxxq.mongodb.net/"};
     mongocxx::client client{uri};
-    mongocxx::database db = client["cart_app_data"];
-    mongocxx::collection cart_info = db["cart_info"];
-    mongocxx::collection slack_channel = db["slack_channel"];
+    mongocxx::database db = client["Carts"];
+    mongocxx::collection cart_collection = db["Cart"];
 
-    std::string url = get_index(slack_channel, "url"), token = get_index(slack_channel, "token"), auth = get_index(slack_channel, "auth");
-    
     CROW_ROUTE(app, "/")([](const request &req, response &res)
     {
-        sendHTML(res, "index.html"); //Loads initial HTML page
+        sendHTML(res, "index.html"); // Loads initial HTML page
     });
 
     CROW_ROUTE(app, "/index.html")([](const request &req, response &res)
     {
-        sendHTML(res, "index.html"); //Loads initial HTML page
+        sendHTML(res, "index.html"); // Loads initial HTML page
     });
 
-    CROW_ROUTE(app, "/checkIn.html")([&slack_channel](const request &req, response &res)
+    CROW_ROUTE(app, "/manifest.json")([](const request &req, response &res)
     {
-        sendHTML(res, "checkIn.html");
+        sendJSON(res, "manifest.json"); // Loads manifest file
     });
 
-    CROW_ROUTE(app, "/checkOut.html")([&slack_channel](const request &req, response &res)
+    CROW_ROUTE(app, "/favicon.ico")([](const request &req, response &res)
+    {
+        sendImage(res, "favicon.ico"); // Loads favicon
+    });
+
+    CROW_ROUTE(app, "/asset-manifest.json")([](const request &req, response &res)
+    {
+        sendJSON(res, "asset-manifest.json"); // Loads asset manifest
+    });
+
+    CROW_ROUTE(app, "/static/css/<string>")([](const request &req, response &res, string fileName)
+    {
+        sendStyle(res, fileName); // Deals with any CSS
+    });
+
+    CROW_ROUTE(app, "/static/js/<string>")([](const request &req, response &res, string fileName)
+    {
+        sendScript(res, fileName); // Loads javascript dependencies
+    });
+
+    CROW_ROUTE(app, "/static/media/<string>")([](const request &req, response &res, string fileName)
+    {
+        sendImage(res, fileName); // Deals with any images we might use
+    });
+
+    CROW_ROUTE(app, "/checkOut.html")([](const request &req, response &res)
     {
         sendHTML(res, "checkOut.html");
     });
 
-    CROW_ROUTE(app, "/styles/<string>")([](const request &req, response &res, string fileName)
+    CROW_ROUTE(app, "/checkIn.html")([](const request &req, response &res)
     {
-        sendStyle(res, fileName); //Deals with any CSS
+        sendHTML(res, "checkIn.html");
     });
 
-    CROW_ROUTE(app, "/scripts/<string>")([](const request &req, response &res, string fileName)
-    {
-        sendScript(res, fileName); //Loads javascript dependencies
-    });
-
-    CROW_ROUTE(app, "/images/<string>")([](const request &req, response &res, string fileName)
-    {
-        sendImage(res, fileName); //Deals with any images we might use
-    });
-
-    CROW_ROUTE(app, "/check_out/<string>")([&slack_channel, &url, &token, &auth](const request &req, response &res, std::string ID)
+    CROW_ROUTE(app, "/check_out/").methods("POST"_method, "GET"_method)([&cart_collection](const request &req)
     {
         chdir("usr/src/cppweb1/ucmercedcartapp1");
-        nlohmann::json x;
-        if(req.url_params.get("auth") != nullptr)
+        crow::json::wvalue x;
+
+        // handles init GET Request
+        if(req.method == "GET"_method) 
         {
-            std::ostringstream os;
-            mongocxx::cursor cursor = slack_channel.find({});
+            std::cout << "GET request" << std::endl;
+            x["method"] = "GET";
+
+            // find how many carts are in collection
+            int num_carts = cart_collection.count_documents({});
+
+            // check which carts are available (have not been checked out)
+            auto cursor = cart_collection.find(make_document(kvp("is_checked_out", false)));
+            std::vector<int> carts;
             for(auto doc : cursor)
             {
-                os << (bsoncxx::to_json(doc)) << '\n';
+                carts.push_back(doc["cart_id"].get_int32().value);
             }
-            x["url"] = url;
-            x["token"] = token;
-            x["authorization"] = auth;
-            x["is_checked_out"] = os.str();
-            if(req.url_params.get("auth") != x["authorization"]) // password not accepted
-            {
-                x["auth"] = false;
-                chdir("/");
-                res.sendJSON(x);
-                return;
-            }
-            x["auth"] = true;
-            slack_channel.update_one(document{} << "is_checked_out" << false << finalize, document{} << "$set" << open_document << "is_checked_out" << true << close_document << finalize);
+            x["num_carts"] = num_carts;
+            x["available_carts"] = carts;
         }
+
+        // handles POST Request when submitting checkout form
+        else if (req.method == "POST"_method)
+        {
+            std::cout << "POST request" << std::endl;
+            x["method"] = "POST";
+
+            auto b = crow::json::load(req.body);
+            if (!b) return crow::response(400);
+
+            if(b.has("name") && b.has("phoneNumber") && b.has("destination") && b.has("mileage") && b.has("report") && b.has("cart_id"))
+            {
+                std::string name = b["name"].s(), phoneNumber = b["phoneNumber"].s(), destination = b["destination"].s(), mileage = b["mileage"].s(), report = b["report"].s();
+                int id = b["cart_id"].i();  
+
+                x["url"] = "https://hooks.slack.com/services/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";
+
+                // update the cart_collection to show that the cart has been checked out
+                auto update_one_result = cart_collection.update_one(make_document(kvp("cart_id", id)), make_document(kvp("$set", make_document(kvp("is_checked_out", true)))));
+                
+                // check that the Cart collection was updated              
+                if(!update_one_result || (update_one_result && update_one_result->modified_count() == 0))
+                {
+                    x["res"] = "Cart has already been checked out!";
+                } 
+                else
+                {
+                    x["res"] = "Cart successfully checked out!";
+                }
+            }
+            else 
+            {
+                std::cout << "Missing request params" << std::endl;
+                x["res"] = "Unable to check out cart, make sure all info is filled in";
+            }
+        }
+
+        // return json response
         chdir("/");
-        res.sendJSON(x);
+        return crow::response(x);
     });
 
-    CROW_ROUTE(app, "/check_in/<string>")([&slack_channel, &auth, &url, &token](const request &req, response &res, std::string ID)
+    CROW_ROUTE(app, "/check_in/").methods("POST"_method, "GET"_method)([&cart_collection](const request &req)
     {
         chdir("usr/src/cppweb1/ucmercedcartapp1");
-        nlohmann::json x;
-        if(req.url_params.get("auth") != nullptr)
+        crow::json::wvalue x;
+
+        // handles init GET Request
+        if(req.method == "GET"_method) 
         {
-            std::ostringstream os;
-            mongocxx::cursor cursor = slack_channel.find({});
+            std::cout << "GET request" << std::endl;
+            x["method"] = "GET";
+
+            // find how many carts are in collection
+            int num_carts = cart_collection.count_documents({});
+
+            // check which carts have been checked out
+            auto cursor = cart_collection.find(make_document(kvp("is_checked_out", true)));
+            std::vector<int> carts;
             for(auto doc : cursor)
             {
-                os << (bsoncxx::to_json(doc)) << '\n';
+                carts.push_back(doc["cart_id"].get_int32().value);
             }
-            x["url"] = url;
-            x["token"] = token;
-            x["authorization"] = auth;
-            x["is_checked_out"] = os.str();
-            if(req.url_params.get("auth") != x["authorization"]) // password not accepted
+            x["num_carts"] = num_carts;
+            x["available_carts"] = carts;
+        }
+
+        // handles POST Request when submitting checkout form
+        else if (req.method == "POST"_method)
+        {
+            std::cout << "POST request" << std::endl;
+            x["method"] = "POST";
+
+            auto b = crow::json::load(req.body);
+            if (!b) return crow::response(400);
+
+            if(b.has("cart_id"))
             {
-                x["auth"] = false;
-                chdir("/");
-                res.sendJSON(x);
-                return;
+                int id = b["cart_id"].i();  
+
+                x["url"] = "https://hooks.slack.com/services/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";
+
+                // update the cart_collection to show that the cart has been checked in
+                auto update_one_result = cart_collection.update_one(make_document(kvp("cart_id", id)), make_document(kvp("$set", make_document(kvp("is_checked_out", false)))));
+                if(!update_one_result || (update_one_result && update_one_result->modified_count() == 0))
+                {
+                    x["res"] = "Cart has already been checked in!";
+                } 
+                else
+                {
+                    x["res"] = "Cart successfully checked in!";
+                }
             }
-            x["auth"] = true;
-            slack_channel.update_one(document{} << "is_checked_out" << true << finalize, document{} << "$set" << open_document << "is_checked_out" << false << close_document << finalize);
+            else 
+            {
+                std::cout << "Missing request params" << std::endl;
+                x["res"] = "Unable to check in cart, make sure all info is filled in";
+            }
         }
+
+        // return json response
         chdir("/");
-        res.sendJSON(x);
+        return crow::response(x);
     });
 
-    CROW_ROUTE(app, "/slack_channel")([&slack_channel]()
-    {
-        std::ostringstream os;
-        mongocxx::cursor cursor = slack_channel.find({});
-        for(auto doc : cursor)
-        {
-            os << bsoncxx::to_json(doc) << '\n';
-        }
-        return crow::response(os.str());
-    });
-
-    CROW_ROUTE(app, "/cart_info")([&cart_info]()
-    {
-        std::ostringstream os;
-        mongocxx::cursor cursor = cart_info.find({});
-        for(auto doc : cursor)
-        {
-            os << bsoncxx::to_json(doc) << '\n' << '\n' << '\n';
-        }
-        return crow::response(os.str());
-    });
-
-    CROW_ROUTE(app, "/reverse_check_in/<string>")([&slack_channel](const request &req, response &res, std::string ID)
-    {
-        chdir("usr/src/cppweb1/ucmercedcartapp1");
-        slack_channel.update_one(document{} << "is_checked_out" << false << finalize, document{} << "$set" << open_document << "is_checked_out" << true << close_document << finalize);
-        chdir("/");
-    });
-
-    CROW_ROUTE(app, "/reverse_check_out/<string>")([&slack_channel](const request &req, response &res, std::string ID)
-    {
-        chdir("usr/src/cppweb1/ucmercedcartapp1");
-        slack_channel.update_one(document{} << "is_checked_out" << true << finalize, document{} << "$set" << open_document << "is_checked_out" << false << close_document << finalize);
-        chdir("/");
-    });
-
-    //Necessary Crow stuff to run server 
+    // Necessary Crow stuff to run server 
     char* port = getenv("PORT");
     uint16_t iPort = static_cast<uint16_t>(port != NULL? std::stoi(port): 18080);
-    //cout << "PORT = " << iPort << '\n';
     app.port(iPort).multithreaded().run();
 
     return 0;

@@ -1,12 +1,14 @@
 # UC-Merced-Cart-Checkout-App
 
-Useful tool to checkout carts on campus, still configuring MongoDB CXX database to support multiple carts and user data
+Useful tool to checkout carts on campus, uses React frontend and Crow C++ / MongoDB backend
 
 Steps to run on localhost:8080
 
 - Make sure Docker is installed! (And in Linux environment)<br />
 - go into main.cpp and adjust the mongocxx uri (message me for database details)
-- cd ucmercedcartapp1/cppweb1/cppbox1<br />
+- cd ucmercedcartapp1/ucmercedcartapp/cart-app
+- npm run build
+- cd ../cppweb1/cppbox1<br />
 - docker build -t cppbox1 .<br />
 - cd .. (go back into cppweb1)<br />
 - docker run -v / <local/cloned/folder> /ucmercedcartapp1/cppweb1:/usr/src/cppweb1 -ti cppbox1:latest bash<br />
@@ -24,9 +26,8 @@ Steps to run on localhost:8080
 
 
 LIST OF THINGS STILL NEEDING TO BE DONE
-- ENSURE USER WHO IS CHECKING IN/OUT IS THE SAME (MAYBE?!)
-- ADD DUO SIGN IN (MAYBE), IF NOT INTRODUCE PASSWORD PROTECTION, ENCRYPT + SALT/PEPPER ON BACKEND
+- ENSURE USER WHO IS CHECKING IN/OUT IS THE SAME 
+- ADD AUTHENTICATION
 - ENSURE MILEAGE IS NOT LESS THAN INTENDED OR MORE THAN INTENDED
-- WITH CORRECT CREDENTIALS, BE ABLE TO UPDATE SERVER ACCORDINGLY
 - ADD IN SLACK VIEW TO BOTTOM OF SITE
-- DO SOMETHING WITH PHONE NUMBER, PERHAPS SEND USER DATA TO DATABASE, MIGHT CLOG IT UP SO MAYBE MOST RECENT USER?
+- TEXT PHONE # ABOUT CART INFO

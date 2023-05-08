@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/skeleton.css">  
         <link rel="stylesheet" type="text/css" href="../styles/crow.css">  
         <link rel="stylesheet" type="text/css" href="../styles/w3.css">  
+        <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
         <script src="../scripts/jquery.min.js" type="text/JavaScript" ></script>
         <script src="../scripts/checkOut.js" type="text/JavaScript"></script>
     </head>
@@ -67,14 +68,20 @@
                     </select>
                 </div>
             </div>
+            <div style="padding: 10px;">
+                <label for="cart_id">Cart ID</label>
+                <select id="cart_id" name="cart_id"></select>
+            </div> 
             <div class="row" style="padding-left: 10px;padding-right: 10px;">
                 <label for="report">Maintenence Report</label>
                 <textarea class="u-full-width" placeholder="Looks Good! ..." id="report"></textarea>
-            </div class="row">
+            </div>
             <br>
             <div class="row" style="padding-left: 10px;">
                 <button type = "button" id="check-out" class="button button-primary" onclick="checkOut()">CHECK OUT</button>
             </div>
+
+            <div id="check-out-res" class="row" style="padding-left: 10px;"></div>
             <br><br><br>
             <div class="row" style="padding-left: 10px;">
                 <label for="Or to Check In...">Or to Check In...</label>

@@ -7,7 +7,6 @@
 #include <unordered_map>
 #include <iostream>
 #include <boost/optional.hpp>
-#include "json.h"
 
 namespace crow
 {
@@ -7323,23 +7322,6 @@ namespace crow
             return is_alive_helper_ && is_alive_helper_();
         }
 
-        void sendJSON(const nlohmann::json& data){
-
-            std::string response = data.dump();
-
-            add_header("Access-Control-Allow-Origin", "*");
-            add_header("Content-Type", "text/html");
-            write(response);
-            end();
-        }
-
-        void sendError400(){
-            add_header("Access-Control-Allow-Origin", "*");
-            add_header("Content-Type", "text/html");
-            code = 400;
-            end();
-        }
-
         private:
             bool completed_{};
             std::function<void()> complete_request_handler_;
@@ -9757,7 +9739,6 @@ namespace crow
 
 
 #pragma once
-
 
 
 

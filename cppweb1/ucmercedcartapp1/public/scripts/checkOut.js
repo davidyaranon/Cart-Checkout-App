@@ -5,6 +5,36 @@ $(document).ready(function(){
     //Generates random session ID :)
     ID = '_' + Math.random().toString(36).substr(2, 9);
     dest = "Academic Office Building (AOB)"
+
+    $.ajax({
+        url: "/check_out/",
+        method: "GET",
+        contentType: "application/json",
+        success: function(response) 
+        {
+            console.log(response);
+            const cartSelect = document.getElementById("cart_id");
+            for(let i = 0; i < response["num_carts"]; ++i)
+            {
+                const option = document.createElement("option");
+                if(response["available_carts"].includes(i + 1))
+                {
+                    option.text = "Cart " + (i + 1);
+                }
+                else
+                {
+                    option.text = "Cart " + (i + 1) + " (Unavailable)";
+                    option.disabled = true;
+                }
+                option.value = i + 1;
+                cartSelect.add(option);
+            }
+        },
+        error: function(xhr, status, error) 
+        {
+            alert("Unable load cart info, check your internet connection!");
+        }
+    });
 });
 
 function destinationSelection(selection)
@@ -23,76 +53,83 @@ Date.prototype.timeNow = function () {
 }
 
 function checkOut(auth="temp", name=document.getElementById("name").value, phoneNumber="2095551234", 
-    destination=dest, mileage=document.getElementById("mileage").value, report=document.getElementById("report").value)
+    destination=dest, mileage=document.getElementById("mileage").value, report=document.getElementById("report").value, cart_id = document.getElementById("cart_id").value)
 {
     if(isNaN(mileage))
     {
         alert("Enter correct value for mileage!");
     }
-    // else if(mileage < getCurrMileage())
-    // {
-    //     alert("Miles do not correspond to what is displayed on cart... check again");
-    // }
-    // else if(mileage > getCurrMileage() + 10)
-    // {
-    //     // are you sure?
-    // }
     else 
     {
-        if(checkFields(auth, name, phoneNumber, destination, mileage, report))
-        {
-            $.get("/check_out/" + ID, 
-            {"auth":auth, "name":name, "phoneNumber":phoneNumber, 
-            "destination":destination,
-            "mileage":mileage,"report":report}, 
-            function(response)
-            {
-                let json = JSON.parse(response);
-                const d = new Date();
-                let day = d.today();
-                let time = d.timeNow();
-                if(determineIfCheckedOut(json))
+        if(checkFields(auth, name, phoneNumber, destination, mileage, report, cart_id))
+        {   
+            $.ajax({
+                url: "/check_out/",
+                method: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    auth: auth,
+                    name: name,
+                    phoneNumber: phoneNumber,
+                    destination: destination,
+                    mileage: mileage,
+                    report: report,
+                    cart_id: cart_id
+                }),
+                success: function(response) 
                 {
-                    alert("Cart is currently checked out!");
-                }
-                else if(json["auth"])
-                {
-                    let text = name + " has checked out cart. \r\nDate: " + day + " @" + time + "\r\n Destination: " + destination + "\r\n Ending Mileage: " + mileage + "\r\nMaintenence Report: " + report;
-                    let token = json["token"]
-                    let url = json["url"];
-                    $.ajax
-                    ({
-                        data: 'payload=' + JSON.stringify
-                        ({
-                            "text": text,
-                            "token" : token
-                        }),
-                        dataType: 'json',
-                        processData: false,
-                        type: 'POST',
-                        url: url
-                    }).fail(function()
-                    { 
-                        // $.get("/reverse_check_out/" + ID, {}, function(response)
-                        // {
+                    console.log(response);
+                    let json = response;
+                    if(!json["res"])
+                    {
+                        alert("Check yor internet connection!");
+                        return;
+                    }
+                    const d = new Date();
+                    let day = d.today();
+                    let time = d.timeNow();
 
-                        // }).fail(function()
-                        // {
-                        //     alert("could not reverse check out, uh oh :( ");
-                        // });
-                        //alert("Server failer while POST... try reloading the page :) ");
-                    });
+                    document.getElementById("check-out-res").innerHTML = json["res"];
+
+                    if(json["url"])
+                    {
+                        let text = name + " has checked out cart " + cart_id + "\r\nDate: " + day + " @" + time + "\r\nDestination: " + destination + "\r\nEnding Mileage: " + mileage + "\r\nMaintenence Report: " + report;
+                        let url = json["url"];
+
+                        // sends message to slack channel
+                        $.ajax
+                        ({
+                            data: 'payload=' + JSON.stringify
+                            ({
+                                "text": text,
+                            }),
+                            dataType: 'json',
+                            processData: false,
+                            type: 'POST',
+                            url: url
+                        }).done(function(response)
+                        {
+                            console.log(response);
+                        }
+                        ).fail(function(jqXHR) {
+                            if(jqXHR.status !== 200) 
+                            {
+                                console.error("Failed to send message to slack channel! Status code: " + jqXHR.status);
+                            }
+                            else
+                            {
+                                document.getElementById("check-out-res").innerHTML += "<br>Message sent to slack channel!";
+                            }
+                        });
+                    }
                     document.getElementById('check-out').innerHTML = '<button type = "button" id="checked-out" class="button button-primary"">Checked Out!</button>';
                     document.getElementById('checked-out').style.opacity='0.5';
-                    document.getElementById('checked-out').disabled = true;
-                }
-                else 
+                    document.getElementById('checked-out').disabled = true; 
+                },
+                error: function(xhr, status, error) 
                 {
-                    alert("Unable to verify user!");
-                }    
-            }).fail(function()
-            { 
-                alert("Server failer while GET... try reloading the page :) ");
+                    alert("Unable to checkout cart, try reloading the page or check your internet connection!");
+                }
             });
         } 
         else 
@@ -108,26 +145,12 @@ function checkFields()
     {
         if(arguments[i] === "")
         {
+            console.log("empty field" + arguments[i]);
             return false;
         }
     }
     return true;
 }
-
-function determineIfCheckedOut(json)
-{
-    let long_string = json["is_checked_out"];
-    let pos = long_string.search("is_checked_out");
-    let sub = long_string.substring(pos + 18, pos + 19);
-    if(sub[0] == 'f')
-    {
-        return false;
-    }
-    return true;
-}
-
-
-
 
 
 /*
