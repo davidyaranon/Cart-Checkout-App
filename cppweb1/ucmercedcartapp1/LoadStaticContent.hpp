@@ -23,7 +23,6 @@ void sendFile(response &res, std::string fileName, std::string contentType)
 {
     auto ss = std::ostringstream{};
     std::ifstream file("/usr/src/cppweb1/ucmercedcartapp1/cart-app/build/" + fileName);
-    std::cout << "Sending file: /usr/src/cppweb1/ucmercedcartapp1/cart-app/build/" << fileName << "\n\n\n";
     if(file)
     {
         ss << file.rdbuf();

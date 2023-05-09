@@ -17,7 +17,7 @@ Steps to run on localhost:8080
 - cmake ..<br />
 - make<br />
 - exit<br />
-- docker run -v / <local/cloned/folder > /ucmercedcartapp1/cppweb1:/usr/src/cppweb1 -p 8080:8080 -e PORT=8080 cppbox1:latest /usr/src/cppweb1/ucmercedcartapp1/build/ucmercedcartapp1<br />
+- docker run -v / <local/cloned/folder > /cppweb1:/usr/src/cppweb1 -p 8080:8080 -e PORT=8080 cppbox1:latest /usr/src/cppweb1/ucmercedcartapp1/build/ucmercedcartapp1<br />
 - open localhost:8080 in browser<br />
 
 

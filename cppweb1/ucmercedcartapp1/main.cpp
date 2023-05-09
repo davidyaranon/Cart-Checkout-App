@@ -108,6 +108,76 @@ int main(int argc, const char* argv[])
         sendHTML(res, "checkIn.html");
     });
 
+    CROW_ROUTE(app, "/login/").methods("POST"_method)([&user_collection](const request &req)
+    {
+        chdir("usr/src/cppweb1/ucmercedcartapp1");
+        crow::json::wvalue x;
+
+        // handles POST Request when submitting login form
+        auto b = crow::json::load(req.body);
+        if(!b) return crow::response(400);
+
+        char* secret_key = std::getenv("SECRET_KEY");
+        if (!secret_key) 
+        {
+            std::cerr << "The SECRET_KEY environment variable is not set" << std::endl;
+            x["res"] = "Internal Server Error";
+            return crow::response(500);
+        } 
+        if(b.has("email") && b.has("password"))
+        {
+            bsoncxx::stdx::optional<bsoncxx::document::value> maybe_result =
+                user_collection.find_one(bsoncxx::builder::stream::document{} << "email" << b["email"].s() << bsoncxx::builder::stream::finalize);
+        
+            if(maybe_result)
+            {
+                bsoncxx::document::view result_view = maybe_result->view();
+                bsoncxx::document::element password_element = result_view["password"];
+                std::string password_hash = password_element.get_utf8().value.to_string();
+
+                if(BCrypt::validatePassword(b["password"].s(), password_hash))
+                {
+                    std::cout << "User logged in" << std::endl;
+                    x["res"] = "Logged in";
+                    x["login"] = true;
+
+                    // Create JWT token
+                    std::string secret_key_string(secret_key);
+                    std::string email = b["email"].s();
+
+                    auto token = jwt::create()
+                        .set_issuer("cartapp")
+                        .set_type("JWS")
+                        .set_payload_claim("email", jwt::claim(email))
+                        .set_issued_at(std::chrono::system_clock::now())
+                        .set_expires_at(std::chrono::system_clock::now() + std::chrono::seconds{60*60*24*7})
+                        .sign(jwt::algorithm::hs256{secret_key_string});
+
+                    x["token"] = token;
+                }
+                else
+                {
+                    std::cout << "Incorrect password" << std::endl;
+                    x["res"] = "Incorrect password";
+                    x["login"] = false;
+                }
+            }
+            else
+            {
+                std::cout << "User does not exist" << std::endl;
+                x["res"] = "Email not found";
+            }
+        }
+        else
+        {
+            std::cout << "Missing request params" << std::endl;
+            x["res"] = "Unable to log into account, make sure all info is filled in";
+        }
+
+        chdir("/");
+        return crow::response(x);
+    });
+
     CROW_ROUTE(app, "/register/").methods("POST"_method)([&user_collection](const request &req)
     {
         chdir("usr/src/cppweb1/ucmercedcartapp1");
@@ -134,6 +204,7 @@ int main(int argc, const char* argv[])
                 {
                     std::cerr << "The SECRET_KEY environment variable is not set" << std::endl;
                     x["res"] = "Internal Server Error";
+                    return crow::response(500);
                 } 
                 else 
                 {
