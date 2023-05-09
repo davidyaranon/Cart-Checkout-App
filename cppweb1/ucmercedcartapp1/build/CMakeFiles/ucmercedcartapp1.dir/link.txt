@@ -1,1 +1,1 @@
-/usr/local/bin/c++      CMakeFiles/ucmercedcartapp1.dir/main.cpp.o  -o ucmercedcartapp1 /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/local/lib/libmongocxx.so /usr/local/lib/libbsoncxx.so -pthread 
+/usr/local/bin/c++     CMakeFiles/ucmercedcartapp1.dir/main.cpp.o  -o ucmercedcartapp1 /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/local/lib/libmongocxx.so /usr/local/lib/libbsoncxx.so /usr/local/lib/libbcrypt.a /usr/lib/x86_64-linux-gnu/libcrypto.so -pthread 

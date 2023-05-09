@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.14)
 
 project(ucmercedcartapp1)
 
@@ -7,6 +7,7 @@ set(THREADS_PREFER_PTHREAD_FLAG ON)
 
 find_package(libmongocxx REQUIRED)
 find_package(libbsoncxx REQUIRED)
+find_package(OpenSSL REQUIRED)
 include_directories(${LIBMONGOCXX_INCLUDE_DIR})
 include_directories(${LIBBSONCXX_INCLUDE_DIR})
 include_directories("/usr/local/include/mongocxx/v_noabi")
@@ -21,4 +22,6 @@ find_package(Threads REQUIRED)
 add_executable(ucmercedcartapp1 main.cpp)
 target_include_directories(ucmercedcartapp1 PRIVATE ${Boost_INCLUDE_DIRS})
 target_link_libraries(ucmercedcartapp1 ${Boost_LIBRARIES} Threads::Threads ${LIBMONGOCXX_LIBRARIES})
+target_link_libraries(ucmercedcartapp1 /usr/local/lib/libbcrypt.a)
+target_link_libraries(ucmercedcartapp1 OpenSSL::Crypto)
 # target_link_libraries(ucmercedcartapp PRIVATE mongo::mongocxx_shared)

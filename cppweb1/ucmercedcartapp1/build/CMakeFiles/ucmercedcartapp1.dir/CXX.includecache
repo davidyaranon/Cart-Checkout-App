@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -2136,5 +2136,9 @@ ctime
 chrono
 -
 unordered_set
+-
+bcrypt/BCrypt.hpp
+-
+jwt-cpp/jwt.h
 -
 

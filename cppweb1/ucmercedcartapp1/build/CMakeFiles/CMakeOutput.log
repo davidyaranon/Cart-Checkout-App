@@ -28,34 +28,28 @@ The CXX compiler identification is GNU, found in "/usr/src/cppweb1/ucmercedcarta
 Determining if the C compiler works passed with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6f126/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_6f126.dir/build.make CMakeFiles/cmTC_6f126.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_4ff0b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4ff0b.dir/build.make CMakeFiles/cmTC_4ff0b.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_6f126.dir/flags.make' has modification time 0.98 s in the future
-Building C object CMakeFiles/cmTC_6f126.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_6f126.dir/testCCompiler.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_6f126
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f126.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_6f126.dir/testCCompiler.c.o  -o cmTC_6f126 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_4ff0b.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4ff0b.dir/testCCompiler.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_4ff0b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ff0b.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4ff0b.dir/testCCompiler.c.o  -o cmTC_4ff0b 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_53054/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_53054.dir/build.make CMakeFiles/cmTC_53054.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_04fc7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_04fc7.dir/build.make CMakeFiles/cmTC_04fc7.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_53054.dir/flags.make' has modification time 0.98 s in the future
-Building C object CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_53054
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53054.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o  -o cmTC_53054  
+Building C object CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_04fc7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04fc7.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o  -o cmTC_04fc7  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper
@@ -65,28 +59,24 @@ Thread model: posix
 gcc version 7.3.0 (GCC) 
 COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_53054' '-mtune=generic' '-march=x86-64'
- /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmqxdTB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_53054 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_53054' '-mtune=generic' '-march=x86-64'
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04fc7' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cceQJvsK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_04fc7 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04fc7' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_53054/fast"]
-  ignore line: [make: Warning: File 'Makefile' has modification time 1 s in the future]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_53054.dir/build.make CMakeFiles/cmTC_53054.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_04fc7/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_04fc7.dir/build.make CMakeFiles/cmTC_04fc7.dir/build]
   ignore line: [make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp']
-  ignore line: [make[1]: Warning: File 'CMakeFiles/cmTC_53054.dir/flags.make' has modification time 0.98 s in the future]
-  ignore line: [Building C object CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_53054]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53054.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o  -o cmTC_53054  ]
+  ignore line: [Building C object CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_04fc7]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04fc7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o  -o cmTC_04fc7  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper]
@@ -96,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.3.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_53054' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmqxdTB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_53054 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04fc7' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cceQJvsK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_04fc7 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
     arg [/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccmqxdTB.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cceQJvsK.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -114,7 +104,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_53054] ==> ignore
+    arg [cmTC_04fc7] ==> ignore
     arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o] ==> ignore
@@ -124,7 +114,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..] ==> dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..]
-    arg [CMakeFiles/cmTC_53054.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_04fc7.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -156,19 +146,15 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_da889/fast"
-make: Warning: File 'Makefile' has modification time 0.99 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_da889.dir/build.make CMakeFiles/cmTC_da889.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_bcca9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bcca9.dir/build.make CMakeFiles/cmTC_bcca9.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_da889.dir/flags.make' has modification time 0.98 s in the future
-Building C object CMakeFiles/cmTC_da889.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_da889.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_da889
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da889.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_da889.dir/feature_tests.c.o  -o cmTC_da889 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_bcca9.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_bcca9.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_bcca9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcca9.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_bcca9.dir/feature_tests.c.o  -o cmTC_bcca9 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -180,19 +166,15 @@ make: warning:  Clock skew detected.  Your build may be incomplete.
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_23fb3/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_23fb3.dir/build.make CMakeFiles/cmTC_23fb3.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2b250/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2b250.dir/build.make CMakeFiles/cmTC_2b250.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_23fb3.dir/flags.make' has modification time 0.98 s in the future
-Building C object CMakeFiles/cmTC_23fb3.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_23fb3.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_23fb3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23fb3.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_23fb3.dir/feature_tests.c.o  -o cmTC_23fb3 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_2b250.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_2b250.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2b250
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b250.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_2b250.dir/feature_tests.c.o  -o cmTC_2b250 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -204,19 +186,15 @@ make: warning:  Clock skew detected.  Your build may be incomplete.
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0249c/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_0249c.dir/build.make CMakeFiles/cmTC_0249c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b745f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b745f.dir/build.make CMakeFiles/cmTC_b745f.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_0249c.dir/flags.make' has modification time 0.98 s in the future
-Building C object CMakeFiles/cmTC_0249c.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_0249c.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_0249c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0249c.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_0249c.dir/feature_tests.c.o  -o cmTC_0249c 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_b745f.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_b745f.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b745f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b745f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b745f.dir/feature_tests.c.o  -o cmTC_b745f 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -226,34 +204,28 @@ make: warning:  Clock skew detected.  Your build may be incomplete.
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_02cbb/fast"
-make: Warning: File 'Makefile' has modification time 0.99 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_02cbb.dir/build.make CMakeFiles/cmTC_02cbb.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_feb0a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_feb0a.dir/build.make CMakeFiles/cmTC_feb0a.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_02cbb.dir/flags.make' has modification time 0.98 s in the future
-Building CXX object CMakeFiles/cmTC_02cbb.dir/testCXXCompiler.cxx.o
-/usr/local/bin/c++      -o CMakeFiles/cmTC_02cbb.dir/testCXXCompiler.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_02cbb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02cbb.dir/link.txt --verbose=1
-/usr/local/bin/c++        CMakeFiles/cmTC_02cbb.dir/testCXXCompiler.cxx.o  -o cmTC_02cbb 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building CXX object CMakeFiles/cmTC_feb0a.dir/testCXXCompiler.cxx.o
+/usr/local/bin/c++      -o CMakeFiles/cmTC_feb0a.dir/testCXXCompiler.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_feb0a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_feb0a.dir/link.txt --verbose=1
+/usr/local/bin/c++        CMakeFiles/cmTC_feb0a.dir/testCXXCompiler.cxx.o  -o cmTC_feb0a 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9213b/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_9213b.dir/build.make CMakeFiles/cmTC_9213b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_04bd9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_04bd9.dir/build.make CMakeFiles/cmTC_04bd9.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_9213b.dir/flags.make' has modification time 0.98 s in the future
-Building CXX object CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o
-/usr/local/bin/c++      -o CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_9213b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9213b.dir/link.txt --verbose=1
-/usr/local/bin/c++       -v CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9213b  
+Building CXX object CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/bin/c++      -o CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_04bd9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04bd9.dir/link.txt --verbose=1
+/usr/local/bin/c++       -v CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_04bd9  
 Using built-in specs.
 COLLECT_GCC=/usr/local/bin/c++
 COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper
@@ -263,28 +235,24 @@ Thread model: posix
 gcc version 7.3.0 (GCC) 
 COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9213b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZPi6jr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9213b /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9213b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04bd9' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0Pb6Vy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_04bd9 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04bd9' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9213b/fast"]
-  ignore line: [make: Warning: File 'Makefile' has modification time 1 s in the future]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9213b.dir/build.make CMakeFiles/cmTC_9213b.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_04bd9/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_04bd9.dir/build.make CMakeFiles/cmTC_04bd9.dir/build]
   ignore line: [make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp']
-  ignore line: [make[1]: Warning: File 'CMakeFiles/cmTC_9213b.dir/flags.make' has modification time 0.98 s in the future]
-  ignore line: [Building CXX object CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/local/bin/c++      -o CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_9213b]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9213b.dir/link.txt --verbose=1]
-  ignore line: [/usr/local/bin/c++       -v CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9213b  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/bin/c++      -o CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_04bd9]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04bd9.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/c++       -v CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_04bd9  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/local/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper]
@@ -294,13 +262,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.3.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9213b' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZPi6jr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9213b /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04bd9' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0Pb6Vy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_04bd9 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
     arg [/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccZPi6jr.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0Pb6Vy.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -312,7 +280,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9213b] ==> ignore
+    arg [cmTC_04bd9] ==> ignore
     arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o] ==> ignore
@@ -322,7 +290,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..] ==> dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..]
-    arg [CMakeFiles/cmTC_9213b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_04bd9.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -352,19 +320,15 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2bd2b/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_2bd2b.dir/build.make CMakeFiles/cmTC_2bd2b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a24cb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a24cb.dir/build.make CMakeFiles/cmTC_a24cb.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_2bd2b.dir/flags.make' has modification time 0.98 s in the future
-Building CXX object CMakeFiles/cmTC_2bd2b.dir/feature_tests.cxx.o
-/usr/local/bin/c++     -std=c++14 -o CMakeFiles/cmTC_2bd2b.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_2bd2b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bd2b.dir/link.txt --verbose=1
-/usr/local/bin/c++        CMakeFiles/cmTC_2bd2b.dir/feature_tests.cxx.o  -o cmTC_2bd2b 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building CXX object CMakeFiles/cmTC_a24cb.dir/feature_tests.cxx.o
+/usr/local/bin/c++     -std=c++14 -o CMakeFiles/cmTC_a24cb.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a24cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a24cb.dir/link.txt --verbose=1
+/usr/local/bin/c++        CMakeFiles/cmTC_a24cb.dir/feature_tests.cxx.o  -o cmTC_a24cb 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -429,19 +393,15 @@ make: warning:  Clock skew detected.  Your build may be incomplete.
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_710e8/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_710e8.dir/build.make CMakeFiles/cmTC_710e8.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b1776/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b1776.dir/build.make CMakeFiles/cmTC_b1776.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_710e8.dir/flags.make' has modification time 0.98 s in the future
-Building CXX object CMakeFiles/cmTC_710e8.dir/feature_tests.cxx.o
-/usr/local/bin/c++     -std=c++11 -o CMakeFiles/cmTC_710e8.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_710e8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_710e8.dir/link.txt --verbose=1
-/usr/local/bin/c++        CMakeFiles/cmTC_710e8.dir/feature_tests.cxx.o  -o cmTC_710e8 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building CXX object CMakeFiles/cmTC_b1776.dir/feature_tests.cxx.o
+/usr/local/bin/c++     -std=c++11 -o CMakeFiles/cmTC_b1776.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b1776
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1776.dir/link.txt --verbose=1
+/usr/local/bin/c++        CMakeFiles/cmTC_b1776.dir/feature_tests.cxx.o  -o cmTC_b1776 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -506,19 +466,15 @@ make: warning:  Clock skew detected.  Your build may be incomplete.
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e17e5/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_e17e5.dir/build.make CMakeFiles/cmTC_e17e5.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6fdb9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fdb9.dir/build.make CMakeFiles/cmTC_6fdb9.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_e17e5.dir/flags.make' has modification time 0.98 s in the future
-Building CXX object CMakeFiles/cmTC_e17e5.dir/feature_tests.cxx.o
-/usr/local/bin/c++     -std=c++98 -o CMakeFiles/cmTC_e17e5.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e17e5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e17e5.dir/link.txt --verbose=1
-/usr/local/bin/c++        CMakeFiles/cmTC_e17e5.dir/feature_tests.cxx.o  -o cmTC_e17e5 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building CXX object CMakeFiles/cmTC_6fdb9.dir/feature_tests.cxx.o
+/usr/local/bin/c++     -std=c++98 -o CMakeFiles/cmTC_6fdb9.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6fdb9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fdb9.dir/link.txt --verbose=1
+/usr/local/bin/c++        CMakeFiles/cmTC_6fdb9.dir/feature_tests.cxx.o  -o cmTC_6fdb9 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -581,18 +537,780 @@ make: warning:  Clock skew detected.  Your build may be incomplete.
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_51b70/fast"
-make: Warning: File 'Makefile' has modification time 1 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_51b70.dir/build.make CMakeFiles/cmTC_51b70.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a391a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a391a.dir/build.make CMakeFiles/cmTC_a391a.dir/build
 make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_51b70.dir/flags.make' has modification time 0.98 s in the future
-Building C object CMakeFiles/cmTC_51b70.dir/CheckIncludeFile.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_51b70.dir/CheckIncludeFile.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_51b70
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51b70.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_51b70.dir/CheckIncludeFile.c.o  -o cmTC_51b70 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_a391a.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a391a.dir/CheckIncludeFile.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a391a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a391a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a391a.dir/CheckIncludeFile.c.o  -o cmTC_a391a 
 make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
-make: warning:  Clock skew detected.  Your build may be incomplete.
 
 
+The system is: Linux - 4.19.128-microsoft-standard - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/3.14.0/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/local/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/3.14.0/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f4477/fast 
+/usr/bin/make -f CMakeFiles/cmTC_f4477.dir/build.make CMakeFiles/cmTC_f4477.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4477.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f4477.dir/testCCompiler.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f4477
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4477.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_f4477.dir/testCCompiler.c.o  -o cmTC_f4477 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eefd6/fast 
+/usr/bin/make -f CMakeFiles/cmTC_eefd6.dir/build.make CMakeFiles/cmTC_eefd6.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: x86_64-linux-gnu
+Configured with: /usr/src/gcc/configure --build=x86_64-linux-gnu --disable-multilib --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 7.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccsdceAf.s
+GNU C11 (GCC) version 7.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include
+ /usr/local/include
+ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C11 (GCC) version 7.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 6e5a93c17fd10f1d4f9806d45c9d273c
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o /tmp/ccsdceAf.s
+GNU assembler version 2.28 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.28
+COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_eefd6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eefd6.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o  -o cmTC_eefd6 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: /usr/src/gcc/configure --build=x86_64-linux-gnu --disable-multilib --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 7.3.0 (GCC) 
+COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eefd6' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cck9wCxi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eefd6 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eefd6' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include]
+    add: [/usr/local/include]
+    add: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  implicit include dirs: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include;/usr/local/include;/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_eefd6/fast ]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_eefd6.dir/build.make CMakeFiles/cmTC_eefd6.dir/build]
+  ignore line: [make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: /usr/src/gcc/configure --build=x86_64-linux-gnu --disable-multilib --enable-languages=c,c++,fortran,go]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccsdceAf.s]
+  ignore line: [GNU C11 (GCC) version 7.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 7.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C11 (GCC) version 7.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 7.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 6e5a93c17fd10f1d4f9806d45c9d273c]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o /tmp/ccsdceAf.s]
+  ignore line: [GNU assembler version 2.28 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.28]
+  ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_eefd6]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eefd6.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o  -o cmTC_eefd6 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: /usr/src/gcc/configure --build=x86_64-linux-gnu --disable-multilib --enable-languages=c,c++,fortran,go]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eefd6' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cck9wCxi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eefd6 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cck9wCxi.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_eefd6] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o] ==> ignore
+    arg [-L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0] ==> dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0]
+    arg [-L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64] ==> dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..] ==> dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..]
+    arg [CMakeFiles/cmTC_eefd6.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0] ==> [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0]
+  collapse library dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64] ==> [/usr/local/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..] ==> [/usr/local/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0;/usr/local/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/local/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7a834/fast 
+/usr/bin/make -f CMakeFiles/cmTC_7a834.dir/build.make CMakeFiles/cmTC_7a834.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a834.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_7a834.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7a834
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a834.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_7a834.dir/feature_tests.c.o  -o cmTC_7a834 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_98b38/fast 
+/usr/bin/make -f CMakeFiles/cmTC_98b38.dir/build.make CMakeFiles/cmTC_98b38.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98b38.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_98b38.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_98b38
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98b38.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_98b38.dir/feature_tests.c.o  -o cmTC_98b38 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d0257/fast 
+/usr/bin/make -f CMakeFiles/cmTC_d0257.dir/build.make CMakeFiles/cmTC_d0257.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0257.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_d0257.dir/feature_tests.c.o   -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_d0257
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0257.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_d0257.dir/feature_tests.c.o  -o cmTC_d0257 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_180a2/fast 
+/usr/bin/make -f CMakeFiles/cmTC_180a2.dir/build.make CMakeFiles/cmTC_180a2.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_180a2.dir/testCXXCompiler.cxx.o
+/usr/local/bin/c++     -o CMakeFiles/cmTC_180a2.dir/testCXXCompiler.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_180a2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_180a2.dir/link.txt --verbose=1
+/usr/local/bin/c++       CMakeFiles/cmTC_180a2.dir/testCXXCompiler.cxx.o  -o cmTC_180a2 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f4e25/fast 
+/usr/bin/make -f CMakeFiles/cmTC_f4e25.dir/build.make CMakeFiles/cmTC_f4e25.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/bin/c++    -v -o CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/local/bin/c++
+Target: x86_64-linux-gnu
+Configured with: /usr/src/gcc/configure --build=x86_64-linux-gnu --disable-multilib --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 7.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccqMxDPJ.s
+GNU C++14 (GCC) version 7.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0
+ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/x86_64-linux-gnu
+ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/backward
+ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include
+ /usr/local/include
+ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 7.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b357499c71ad6eacbac176303232db77
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccqMxDPJ.s
+GNU assembler version 2.28 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.28
+COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_f4e25
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4e25.dir/link.txt --verbose=1
+/usr/local/bin/c++      -v CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f4e25 
+Using built-in specs.
+COLLECT_GCC=/usr/local/bin/c++
+COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: /usr/src/gcc/configure --build=x86_64-linux-gnu --disable-multilib --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 7.3.0 (GCC) 
+COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4e25' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaxwTQM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f4e25 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4e25' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0]
+    add: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/x86_64-linux-gnu]
+    add: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/backward]
+    add: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include]
+    add: [/usr/local/include]
+    add: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  implicit include dirs: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0;/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/x86_64-linux-gnu;/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/backward;/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include;/usr/local/include;/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_f4e25/fast ]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f4e25.dir/build.make CMakeFiles/cmTC_f4e25.dir/build]
+  ignore line: [make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/bin/c++    -v -o CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/bin/c++]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: /usr/src/gcc/configure --build=x86_64-linux-gnu --disable-multilib --enable-languages=c,c++,fortran,go]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccqMxDPJ.s]
+  ignore line: [GNU C++14 (GCC) version 7.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 7.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0]
+  ignore line: [ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/x86_64-linux-gnu]
+  ignore line: [ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../include/c++/7.3.0/backward]
+  ignore line: [ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 7.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 7.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: b357499c71ad6eacbac176303232db77]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccqMxDPJ.s]
+  ignore line: [GNU assembler version 2.28 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.28]
+  ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_f4e25]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4e25.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/c++      -v CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f4e25 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: /usr/src/gcc/configure --build=x86_64-linux-gnu --disable-multilib --enable-languages=c,c++,fortran,go]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/libexec/gcc/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4e25' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaxwTQM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f4e25 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0 -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/local/libexec/gcc/x86_64-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccaxwTQM.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f4e25] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtbegin.o] ==> ignore
+    arg [-L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0] ==> dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0]
+    arg [-L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64] ==> dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..] ==> dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..]
+    arg [CMakeFiles/cmTC_f4e25.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0] ==> [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0]
+  collapse library dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../../../lib64] ==> [/usr/local/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0/../../..] ==> [/usr/local/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/local/lib/gcc/x86_64-linux-gnu/7.3.0;/usr/local/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/local/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ac5d5/fast 
+/usr/bin/make -f CMakeFiles/cmTC_ac5d5.dir/build.make CMakeFiles/cmTC_ac5d5.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ac5d5.dir/feature_tests.cxx.o
+/usr/local/bin/c++    -std=c++1z -o CMakeFiles/cmTC_ac5d5.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ac5d5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac5d5.dir/link.txt --verbose=1
+/usr/local/bin/c++       CMakeFiles/cmTC_ac5d5.dir/feature_tests.cxx.o  -o cmTC_ac5d5 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5e29d/fast 
+/usr/bin/make -f CMakeFiles/cmTC_5e29d.dir/build.make CMakeFiles/cmTC_5e29d.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e29d.dir/feature_tests.cxx.o
+/usr/local/bin/c++    -std=c++14 -o CMakeFiles/cmTC_5e29d.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5e29d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e29d.dir/link.txt --verbose=1
+/usr/local/bin/c++       CMakeFiles/cmTC_5e29d.dir/feature_tests.cxx.o  -o cmTC_5e29d 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_38cdd/fast 
+/usr/bin/make -f CMakeFiles/cmTC_38cdd.dir/build.make CMakeFiles/cmTC_38cdd.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_38cdd.dir/feature_tests.cxx.o
+/usr/local/bin/c++    -std=c++11 -o CMakeFiles/cmTC_38cdd.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_38cdd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38cdd.dir/link.txt --verbose=1
+/usr/local/bin/c++       CMakeFiles/cmTC_38cdd.dir/feature_tests.cxx.o  -o cmTC_38cdd 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7c635/fast 
+/usr/bin/make -f CMakeFiles/cmTC_7c635.dir/build.make CMakeFiles/cmTC_7c635.dir/build
+make[1]: Entering directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7c635.dir/feature_tests.cxx.o
+/usr/local/bin/c++    -std=c++98 -o CMakeFiles/cmTC_7c635.dir/feature_tests.cxx.o -c /usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7c635
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c635.dir/link.txt --verbose=1
+/usr/local/bin/c++       CMakeFiles/cmTC_7c635.dir/feature_tests.cxx.o  -o cmTC_7c635 
+make[1]: Leaving directory '/usr/src/cppweb1/ucmercedcartapp1/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates

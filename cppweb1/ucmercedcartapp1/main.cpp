@@ -22,6 +22,9 @@
 #include <chrono>
 #include <unordered_set>
 
+#include <bcrypt/BCrypt.hpp>
+#include <jwt-cpp/jwt.h>
+
 using namespace std;
 using namespace crow;
 using bsoncxx::builder::stream::close_array;
@@ -46,8 +49,14 @@ int main(int argc, const char* argv[])
     mongocxx::instance inst{};
     const auto uri = mongocxx::uri{"mongodb+srv://dyaranon:Moonlight1201%21@neon.w6akxxq.mongodb.net/"};
     mongocxx::client client{uri};
-    mongocxx::database db = client["Carts"];
-    mongocxx::collection cart_collection = db["Cart"];
+    
+     // Carts database with Cart collection
+    mongocxx::database carts_db = client["Carts"];
+    mongocxx::collection cart_collection = carts_db["Cart"];
+
+    // Users database with User collection
+    mongocxx::database users_db = client["Users"];
+    mongocxx::collection user_collection = users_db["User"];
 
     CROW_ROUTE(app, "/")([](const request &req, response &res)
     {
@@ -97,6 +106,65 @@ int main(int argc, const char* argv[])
     CROW_ROUTE(app, "/checkIn.html")([](const request &req, response &res)
     {
         sendHTML(res, "checkIn.html");
+    });
+
+    CROW_ROUTE(app, "/register/").methods("POST"_method)([&user_collection](const request &req)
+    {
+        chdir("usr/src/cppweb1/ucmercedcartapp1");
+        crow::json::wvalue x;
+
+        // handles POST Request when submitting registration form
+        auto b = crow::json::load(req.body);
+        if(!b) return crow::response(400);
+
+        if(b.has("email") && b.has("password"))
+        {
+            bsoncxx::stdx::optional<bsoncxx::document::value> maybe_result =
+                user_collection.find_one(bsoncxx::builder::stream::document{} << "email" << b["email"].s() << bsoncxx::builder::stream::finalize);
+        
+            if(maybe_result)
+            {
+                std::cout << "User already exists" << std::endl;
+                x["res"] = "Email already taken/used";
+            }
+            else
+            {
+                char* secret_key = std::getenv("SECRET_KEY");
+                if (!secret_key) 
+                {
+                    std::cerr << "The SECRET_KEY environment variable is not set" << std::endl;
+                    x["res"] = "Internal Server Error";
+                } 
+                else 
+                {
+                    std::string secret_key_string(secret_key);
+                    std::string email = b["email"].s(), password = b["password"].s();
+                    std::string hashed_password = BCrypt::generateHash(password);
+                    bsoncxx::document::value doc_value = make_document(kvp("email", email), kvp("password", hashed_password));
+
+                    user_collection.insert_one(std::move(doc_value));
+
+                    auto token = jwt::create()
+                        .set_issuer("cartapp")
+                        .set_type("JWS")
+                        .set_payload_claim("email", jwt::claim(email))
+                        .set_issued_at(std::chrono::system_clock::now())
+                        .set_expires_at(std::chrono::system_clock::now() + std::chrono::seconds{60*60*24*7})
+                        .sign(jwt::algorithm::hs256{secret_key_string});
+
+                    x["token"] = token;
+                    x["res"] = "Account created successfully";
+                } 
+            }
+        }
+        else
+        {
+            std::cout << "Missing request params" << std::endl;
+            x["res"] = "Unable to register account, make sure all info is filled in";
+        }
+
+        chdir("/");
+        return crow::response(x);
     });
 
     CROW_ROUTE(app, "/check_out/").methods("POST"_method, "GET"_method)([&cart_collection](const request &req)

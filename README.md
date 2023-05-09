@@ -6,9 +6,10 @@ Steps to run on localhost:8080
 
 - Make sure Docker is installed! (And in Linux environment)<br />
 - go into main.cpp and adjust the mongocxx uri (message me for database details)
-- cd ucmercedcartapp1/ucmercedcartapp/cart-app
+- cd cppweb1/ucmercedcartapp1/cart-app
+- npm install
 - npm run build
-- cd ../cppweb1/cppbox1<br />
+- cd ../../cppbox1<br />
 - docker build -t cppbox1 .<br />
 - cd .. (go back into cppweb1)<br />
 - docker run -v / <local/cloned/folder> /ucmercedcartapp1/cppweb1:/usr/src/cppweb1 -ti cppbox1:latest bash<br />
