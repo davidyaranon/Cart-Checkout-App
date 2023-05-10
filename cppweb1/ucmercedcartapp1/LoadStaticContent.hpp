@@ -34,7 +34,7 @@ void sendFile(response &res, std::string fileName, std::string contentType)
     {
         char f[256];
         res.code = 404;
-        res.write("FILE NOT FOUND!!\nEmail dy45@humboldt.edu for updates on the site (he might not know how to fix it though)\n\n\n)");
+        res.write("FILE NOT FOUND!!\nEmail dy45@humboldt.edu for updates on the site (he might not know how to fix it though)\n\n\n");
         res.write(getcwd(f, 256));
     }
     res.end();

@@ -14,7 +14,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include/bsoncxx/v_noabi"
   "/usr/local/include/libmongoc-1.0"
   "/usr/local/include/libbson-1.0"
-  "/usr/local/lib"
   )
 
 # Targets to which this target links.

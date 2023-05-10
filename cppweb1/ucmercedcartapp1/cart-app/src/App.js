@@ -1,12 +1,36 @@
-import logo from './images/seal.png';
-import './App.css';
-import Header from './components/header/header';
-import React from 'react';
+import logo from "./images/seal.png";
+import "./App.css";
+import Header from "./components/header/header";
+import React from "react";
 
 function App() {
-
   const userRef = React.useRef(null);
   const passRef = React.useRef(null);
+
+  const loginUserRef = React.useRef(null);
+  const loginPassRef = React.useRef(null);
+
+  const handleLogin = () => {
+    const email = loginUserRef.current.value;
+    const password = loginPassRef.current.value;
+    if (!email || !password) {
+      alert("Please enter email and password");
+      return;
+    }
+    fetch("/login/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: email, password: password }),
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        console.log(json);
+        sessionStorage.setItem("email", email);
+        sessionStorage.setItem("loginResponse", JSON.stringify(json));
+      });
+  };
 
   const handleRegister = () => {
     const email = userRef.current.value;
@@ -51,25 +75,36 @@ function App() {
   }, []);
 
   return (
-    <><Header /><div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div><input type="text" ref={userRef} placeholder="email" /></div>
-      <div><input type="password" ref={passRef} placeholder="password" /></div>
-      <div><button onClick={handleRegister}>Register</button></div>
-    </div></>
+    <>
+      <Header />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+        <div>
+          <input type="text" ref={userRef} placeholder="email" />
+          <input type="password" ref={passRef} placeholder="password" />
+          <button onClick={handleRegister}>Register</button>
+        </div>
+
+        <div>
+          <input type="text" ref={loginUserRef} placeholder="email" />
+          <input type="password" ref={loginPassRef} placeholder="password" />
+          <button onClick={handleLogin}>Login</button>
+        </div>
+      </div>
+    </>
   );
 }
 

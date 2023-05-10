@@ -12,8 +12,8 @@ Steps to run on localhost:8080
 - cd ../../cppbox1<br />
 - docker build -t cppbox1 .<br />
 - cd .. (go back into cppweb1)<br />
-- docker run -v / <local/cloned/folder> /ucmercedcartapp1/cppweb1:/usr/src/cppweb1 -ti cppbox1:latest bash<br />
-- cd usr/src/cppweb1/ucmercedcartapp1/build<br />
+- docker run -v / <local/cloned/folder> /cppweb1:/usr/src/cppweb1 -ti cppbox1:latest bash<br />
+- cd /usr/src/cppweb1/ucmercedcartapp1/build<br />
 - cmake ..<br />
 - make<br />
 - exit<br />

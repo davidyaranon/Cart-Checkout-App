@@ -17,7 +17,7 @@ RUN apt-get install -y libmongoc-1.0-0
 RUN apt-get install -y libbson-1.0-0
 RUN apt-get install -y cmake libssl-dev libsasl2-dev
 
-RUN wget -qO- "https://cmake.org/files/v3.14/cmake-3.14.0-Linux-x86_64.tar.gz" | tar --strip-components=1 -xz -C /usr/local
+RUN wget -qO- "https://cmake.org/files/v3.15/cmake-3.15.0-Linux-x86_64.tar.gz" | tar --strip-components=1 -xz -C /usr/local
 
 RUN git clone https://github.com/trusch/libbcrypt && \
 cd libbcrypt && \
