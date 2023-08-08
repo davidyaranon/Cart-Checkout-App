@@ -1,4 +1,4 @@
-# UC-Merced-Cart-Checkout-App
+# Cart-Checkout-App
 
 Useful tool to checkout carts on campus, uses React frontend and Crow C++ / MongoDB backend
 
